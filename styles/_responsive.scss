@@ -1,0 +1,131 @@
+@media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+    .home {
+      &__img {
+        width: 180px;
+      }
+      &__title {
+        font-size: 8rem;
+      }
+    }
+    .model__tooltip-1 .model__tooltip-text,
+    .model__tooltip-2 .model__tooltip-text {
+      transform: translate(40px, -40px);
+    }
+    .sponsor {
+      margin-left: 30px;
+    }
+    .footer {
+      &__form {
+        button {
+          width: 130px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .about {
+      &__container {
+        grid-template-columns: 380px;
+        justify-content: center;
+      }
+    }
+    .footer {
+      &__data {
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 48px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .home {
+      &__img {
+        width: 320px;
+      }
+      &__title {
+        font-size: 256px;
+        top: -64px;
+      }
+      &__social {
+        top: 0;
+        bottom: 0;
+        align-content: center;
+      }
+    }
+    .sponsor__container {
+      grid-template-columns: repeat(4, max-content);
+    }
+    .footer__container {
+      justify-content: space-between;
+    }
+    .footer__data {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+    }
+  }
+  @media screen and (min-width: 1150px) {
+    .container {
+      margin-inline: auto;
+    }
+    .section {
+      padding-block: 128px 32px;
+    }
+    .section__title {
+      font-size: var(--h1-font-size);
+    }
+    .home__img {
+      width: 500px;
+    }
+    .home__title {
+      font-size: 25rem;
+      top: -8px;
+      column-gap: 16px;
+    }
+    .home__tooltip-img {
+      width: initial;
+    }
+    .home__tooltip-text {
+      font-size: var(--normal-font-size);
+      transform: translate(82px, -52px);
+    }
+    .home__social-text {
+      font-size: var(--normal-font-size);
+    }
+    .home__social-links {
+      row-gap: 16px;
+    }
+    .home__social-link {
+      font-size: 24px;
+    }
+    .about__container {
+      grid-template-columns: 400px 500px;
+    }
+    .about__data .section__title,
+    .about__data {
+      text-align: initial;
+    }
+    .about__img {
+      width: 500px;
+    }
+    .model__img {
+      width: 600px;
+    }
+    .model__tooltip-img {
+      width: initial;
+    }
+    .model__tooltip-text {
+      font-size: var(--normal-font-size);
+      padding: 8px 20px;
+      transform: translate(82px, -56px);
+    }
+    .model__tooltip-1 {
+      top: 160px;
+      left: 13rem;
+    }
+    .model__tooltip-3 {
+      bottom: 6rem;
+      right: 120px;
+    }
+  }

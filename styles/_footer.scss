@@ -1,0 +1,72 @@
+.footer {
+    padding-block: 32px;
+    display: grid;
+    margin-left: 40px;
+    &__container {
+      row-gap: 64px;
+    }
+    &__logo {
+      font-size: var(--h2-font-size);
+      color: var(--first-color);
+      font-weight: var(--font-semi-bold);
+    }
+    &__data {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__title {
+      font-size: var(--h3-font-size);
+      margin-bottom: 32px;
+    }
+    &__links {
+      display: grid;
+      row-gap: 10px;
+    }
+    &__link {
+      color: var(--text-color);
+      transition: color 0.4s;
+      &:hover {
+        color: var(--first-color);
+      }
+    }
+    &__group {
+      display: grid;
+      // place-items: center;
+      input {
+        border: none;
+        outline: none;
+        padding: 20px 30px;
+        width: 70%;
+        margin-bottom: 20px;
+        border-radius: 64px;
+        background-color: var(--container-color);
+        color: var(--text-color);
+      }
+      button {
+        width: 70%;
+      }
+    }
+    &__button {
+      cursor: pointer;
+      outline: none;
+      border: none;
+    }
+    &__social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      div {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 10px;
+        a {
+          color: var(--text-color);
+          transition: color 0.3s;
+          &:hover {
+            color: var(--first-color);
+          }
+        }
+      }
+    }
+  }

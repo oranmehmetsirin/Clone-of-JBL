@@ -1,0 +1,29 @@
+.favorite {
+    text-align: center;
+    padding: 10px 40px;
+    &-card {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      div {
+        display: flex;
+        gap: 30px;
+      }
+      img {
+        width: 200px;
+        &:hover {
+          width: 250px;
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .favorite {
+      &-card {
+        div {
+          flex-direction: column;
+        }
+      }
+    }
+  }
